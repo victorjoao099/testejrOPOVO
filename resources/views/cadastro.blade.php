@@ -14,7 +14,7 @@
 <form action="{{route('api.news.store')}}" method="POST">
     @csrf
 
-    {{-- {{dd(session('user'))}}; --}}
+
     @php
         echo $errors->any()
     @endphp

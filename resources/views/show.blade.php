@@ -12,9 +12,12 @@
     
     <h1>Detalhes da noticia</h1>
 
+    {{-- Recupera dados da sessão e das Noticias e coloca na tela --}}
+
     ID: {{$news->id}}<br>
     Titulo: {{$news->Titulo}}<br>
     Conteúdo: {{$news->Conteudo}}<br>
+    Autor: {{$news->autor}}<br>
     Publicado em: {{\Carbon\Carbon::parse($news->publicado_em)->tz('America/Sao_Paulo')->format('d/m/Y H:i:s')}}<br>
 
 </body>

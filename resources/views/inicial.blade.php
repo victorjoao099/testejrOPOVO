@@ -17,17 +17,22 @@
     <a href="cadastrar"><button class="bi bi-plus" id="cadastrarNoticia" name="cadastrarNoticia">Cadastrar
             Noticia</button></a>
 
-    <a href=""><button class="bi bi-box-arrow-right" id="logout" class="logout">Sair</button></a>
-    <br>
+    <form action="{{route('logout')}}" method="POST">
+        @csrf
 
+        <button class="bi bi-box-arrow-right" id="logout" class="logout">Sair</button>
+</form>
 
-    @forelse ($noticias as $noticia)
-        <a href=""><button>Editar</button></a>
-        <a href="{{route('newsShow', ['news' => $noticia->id])}}"><button>Visualizar</button></a>
-        ID: {{ $noticia->id }}<br>
-        Titulo: {{ $noticia->Titulo }}<br>
-        Conteúdo: {{ $noticia->Conteudo }}<br>
-        Data: {{ \Carbon\Carbon::parse($noticia->publicado_em)->tz('America/Sao_Paulo')->format('d/m/Y') }}<br>
+{{-- {{print}} --}}
+
+    @forelse ($noticias as $news)
+        <a href="{{route('newsEdit', ['news' => $news->id])}}"><button>Editar</button></a>
+        <a href="{{route('newsShow', ['news' => $news->id])}}"><button>Visualizar</button></a>
+        ID: {{ $news->id }}<br>
+        Titulo: {{ $news->Titulo }}<br>
+        Conteúdo: {{ $news->Conteudo }}<br>
+        Autor: {{ $news->autor }}<br>
+        Data: {{ \Carbon\Carbon::parse($news->publicado_em)->tz('America/Sao_Paulo')->format('d/m/Y') }}<br>
         <hr>
 
     @empty
