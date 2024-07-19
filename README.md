@@ -38,8 +38,8 @@ php artisan serve
 
 Mencione as ferramentas que você usou para criar seu projeto
 
-* [Visual Studio Code]([https://code.visualstudio.com/]) - O IDE utilizado
-* [XAMPP]([https://www.apachefriends.org/pt_br/index.html]) - Gerente de Dependência
+* [Visual Studio Code](https://code.visualstudio.com/) - O IDE utilizado
+* [XAMPP](https://www.apachefriends.org/pt_br/index.html) - Gerente de Dependência
 
 
 ## 📌 Versão
