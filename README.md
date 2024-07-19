@@ -44,10 +44,10 @@ Mencione as ferramentas que você usou para criar seu projeto
 
 ## 📌 Versão
 
-Usei [Git]((https://git-scm.com/)) para controle de versão. 
+Usei [Git](https://git-scm.com/) para controle de versão. 
 
 ## ✒️ Autores
 
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
-* **João Victor** - *Programador Backend* - [acesse aqui]((https://github.com/victorjoao099))
+* **João Victor** - *Programador Backend* - [acesse aqui](https://github.com/victorjoao099)
